@@ -237,6 +237,8 @@ code {
 .education-section {
   background: var(--bg-main);
   position: relative;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .soft-card {
@@ -316,4 +318,73 @@ code {
   letter-spacing: 0.7px;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
+}
+
+.experience-section {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(215, 185, 140, 0.18), transparent 28%),
+    radial-gradient(circle at 85% 75%, rgba(63, 86, 84, 0.08), transparent 30%),
+    var(--bg-main);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experience-card {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 2rem;
+  align-items: start;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 70px rgba(74, 51, 35, 0.12);
+}
+
+.experience-logo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.experience-logo {
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+}
+
+.experience-points {
+  margin: 1.3rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--text-muted);
+}
+
+.experience-points li {
+  margin-bottom: 0.65rem;
+}
+
+.experience-points li::marker {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .experience-card {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .experience-logo-wrap {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }

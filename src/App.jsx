@@ -1,6 +1,7 @@
 import NavigationBar from "./components/NavigationBar";
 import About from "./components/About";
 import Education from "./components/Education";
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <main>
         <About />
         <Education />
+        <Experience />
       </main>
     </>
   );
