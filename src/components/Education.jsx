@@ -41,7 +41,7 @@ function Education() {
                 </div>
 
                 <div className="card-meta text-md-end">
-                  <p>Expected 2027</p>
+                  <p>Expected Graduation: 2027</p>
                   <p>Ottawa, ON</p>
                 </div>
               </div>
