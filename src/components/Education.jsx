@@ -12,8 +12,7 @@ function Education() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <p className="section-label">Academic Background</p>
-          <h2 className="section-title">Education</h2>
+          <h2 className="section-title">Academic Background</h2>
         </motion.div>
 
         <motion.div
