@@ -17,7 +17,6 @@
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
-  color-scheme: light dark;
   color: var(--text);
   background: var(--bg);
   font-synthesis: none;
@@ -55,15 +54,7 @@ body {
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  min-height: 100vh;
 }
 
 h1,
@@ -108,4 +99,40 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+.custom-navbar {
+  background: rgba(247, 241, 232, 0.86);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(138, 98, 64, 0.18);
+}
+
+.custom-navbar .navbar-brand {
+  color: #4a3323;
+  letter-spacing: 0.3px;
+}
+
+.custom-navbar .nav-link {
+  color: #1f1b18;
+  font-weight: 500;
+  position: relative;
+}
+
+.custom-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #8a6240;
+  left: 0;
+  bottom: 3px;
+  transition: 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #4a3323;
+}
+
+.custom-navbar .nav-link:hover::after {
+  width: 100%;
 }
