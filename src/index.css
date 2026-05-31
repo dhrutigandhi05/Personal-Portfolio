@@ -213,3 +213,107 @@ code {
     transform: translateY(-12px);
   }
 }
+
+.section-heading {
+  margin-bottom: 3rem;
+}
+
+.section-label {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  color: var(--accent-dark);
+  letter-spacing: -1px;
+}
+
+.education-section {
+  background: var(--bg-main);
+  position: relative;
+}
+
+.soft-card {
+  background: rgba(255, 250, 247, 0.82);
+  border: 1px solid var(--border-soft);
+  border-radius: 28px;
+  padding: 2rem;
+  box-shadow: 0 24px 60px rgba(74, 51, 35, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.education-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.education-card::after {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: rgba(63, 86, 84, 0.08);
+  right: -80px;
+  bottom: -80px;
+}
+
+.logo-card {
+  width: 175px;
+  height: auto;
+  object-fit: contain;
+}
+
+.card-title {
+  color: var(--accent-dark);
+  font-weight: 800;
+  margin-bottom: 0.35rem;
+}
+
+.card-subtitle {
+  color: var(--text-muted);
+  font-size: 1.02rem;
+  margin-bottom: 0;
+}
+
+.card-meta p {
+  margin: 0;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.4rem;
+}
+
+.tag-list span {
+  background: rgba(63, 86, 84, 0.09);
+  color: var(--accent);
+  border: 1px solid rgba(63, 86, 84, 0.14);
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.coursework-block {
+  margin-top: 1.4rem;
+}
+
+.mini-heading {
+  color: var(--accent-dark);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}

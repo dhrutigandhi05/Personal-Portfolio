@@ -1,5 +1,6 @@
 import NavigationBar from "./components/NavigationBar";
 import About from "./components/About";
+import Education from "./components/Education";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <NavigationBar />
       <main>
         <About />
+        <Education />
       </main>
     </>
   );
