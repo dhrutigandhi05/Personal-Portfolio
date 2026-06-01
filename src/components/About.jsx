@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import profile from "../assets/profile_pic.jpg";
+import resume from "../assets/Resume.pdf";
 
 function About() {
   return (
@@ -22,8 +23,8 @@ function About() {
             </p>
 
             <div className="d-flex gap-3 flex-wrap mt-4">
-              <a href="#projects" className="outline-btn">
-                View Projects
+              <a href={resume} className="accent-btn" target="_blank" rel="noreferrer">
+                View Resume
               </a>
 
               <a href="#contact" className="outline-btn">
