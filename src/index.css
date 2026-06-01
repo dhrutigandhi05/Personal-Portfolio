@@ -808,3 +808,31 @@ code {
   color: rgba(247, 243, 236, 0.72);
   font-size: 0.7rem;
 }
+
+@media (max-width: 768px) {
+  .profile-frame {
+    width: min(260px, 75vw);
+    padding: 9px;
+    margin-top: 2rem;
+  }
+
+  .profile-img {
+    border-width: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 95px;
+    min-height: auto;
+    padding-bottom: 60px;
+  }
+
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+}
