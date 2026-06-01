@@ -789,3 +789,22 @@ code {
     min-height: 300px;
   }
 }
+
+.footer-section {
+  background: var(--accent-dark);
+  color: var(--bg-main);
+  text-align: center;
+  font-size: 0.95rem;
+  padding: 1rem 0;
+}
+
+.footer-section p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.footer-small {
+  margin-top: 0.3rem !important;
+  color: rgba(247, 243, 236, 0.72);
+  font-size: 0.7rem;
+}
